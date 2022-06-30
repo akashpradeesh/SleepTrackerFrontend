@@ -12,7 +12,6 @@ import axios from 'axios';
 export default function NewEntry({user,dataUpdate}) {
   const [open, setOpen] = React.useState(false);
   const [data,setData]= React.useState({date:'',slept:'',wake:''});
-  const [dur,setDur] = React.useState(); //For duration calculation
 
   const handleClickOpen = () => {
     setOpen(true);

@@ -31,9 +31,9 @@ export default function Login() {
   let navigate = useNavigate();
   React.useEffect(()=>{axios.get(`/SignUp/Signup`).then((response)=>{
     setDatabase(response.data)
-  })
+  },)
          
-  },[]);
+  },[database]);
   const handleClickOpen = () => {
     setOpen(true);
   };
